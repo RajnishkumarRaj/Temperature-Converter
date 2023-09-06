@@ -1,0 +1,99 @@
+html{
+    background-color: #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: #27374D;
+    color: wheat;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    background-color: #526D82;
+    text-align: center;
+    padding: 23px;
+}
+.celsius {
+    padding: 20px 20px;
+    margin-left: 25px;
+}
+.fahrenheit {
+    padding: 20px 20px;
+    margin-left: 25px;
+}
+.kelvin {
+    padding: 20px 20px;
+    margin-left: 25px;
+}
+
+label{
+    margin: 0.5em;
+    color: white;
+}
+
+input {
+    margin: 0.5em;
+    color: black;
+}
+
+input, button {
+    padding: 0.5em;
+}
+
+button {
+    margin: 0.5em;
+    background-color: black;
+    color: wheat;
+    border:none;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+/*****FOOTER SECTION*****/
+.container {
+	width: 1100px;
+	margin: 0px auto;
+    display: table;
+}
+.footer {
+	background-color: #9DB2BF;
+	padding: 30px 0px 20px 0px;
+	width: 100%;
+	float: left;
+}
+.footer-sect {
+    float:left;
+	color: #202020;
+}
+.footer-sect p {
+	color: #202020;
+    float:right;
+	margin-left: 22rem;
+}
+.footer-sect a {
+    float: right;
+	color: #202020;
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 18px;
+	text-align: center;
+}
+.social-icon a i {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #040D12;
+	line-height: 50px;
+	font-size: 20px;
+	border-radius: 50%;
+}
