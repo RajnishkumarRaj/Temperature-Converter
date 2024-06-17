@@ -1,63 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Temperature Converter Website</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Temperature Converter</h1>
-    </header>
+    <div class="container">
+        <header class="temp-heading">
+            <h1>Temperature Converter</h1>
+        </header>
+        <main class="temp-body">
+            <form id="converterForm">
+                <p>
+                    <label for="inputValue">Temperature</label>
+                    <input type="number" id="inputValue" placeholder="Enter temperature" required>
+                </p>
+                
+                <p>
+                    <label for="inputUnit">Convert From</label>
+                    <select id="inputUnit">
+                        <option value="°C">Celsius</option>
+                        <option value="°F">Fahrenheit</option>
+                        <option value="K">Kelvin</option>
+                    </select>
+                </p>
 
-    <main>
-        <div class="celsius">
-            <label for="celsius"><b>Celsius:</b></label>
-            <input type="number" id="celsius" placeholder="Enter temperature in Celsius" step="0.01">
-            <button id="convertCtoF"><b>Convert to Fahrenheit</b></button>
-            <p id="resultCtoF"></p>
-        </div>
-    
-        <div class="fahrenheit">
-            <label for="fahrenheit"><b>Fahrenheit:</b></label>
-            <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit" step="0.01">
-            <button id="convertFtoC"><b>Convert to Celsius</b></button>
-            <p id="resultFtoC"></p>
-        </div>
-
-        <div class="kelvin">
-          <label for="kelvin"><b>Kelvin:</b></label>
-          <input type="number" id="kelvin" placeholder="Enter temperature in Kelvin" step="0.01">
-          <button id="convertKtoF"><b>Convert to Fahrenheit</b></button>
-          <p id="resultKtoF"></p>
-      </div>
-    </main>
-    <script src="script.js"></script>
-
-    <!------FOOTER SECTION------>
-<div class="footer">
-  <div class="container">
-    <div class="footer-sect social-icon width-50">
-      <a href="https://www.facebook.com/profile.php?id=100013850087218">
-        <i class="fa fa-facebook"></i>
-      </a>
-      <a href="https://twitter.com/raj19642830">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/rajnish-kumar-a77109239/">
-        <i class="fa fa-linkedin"></i>
-      </a>
-      <a href="https://www.instagram.com/rajnish_kumar_r/">
-        <i class="fa fa-instagram"></i>
-      </a>
-      <a href="https://github.com/RajnishkumarRaj">
-        <i class="fa fa-github"></i>
-      </a>
+                <p>
+                    <label for="outputUnit">Convert To</label>
+                    <select id="outputUnit">
+                        <option value="°C">Celsius</option>
+                        <option value="°F">Fahrenheit</option>
+                        <option value="K">Kelvin</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="button" id="convertButton">Convert</button>
+                </p>
+            </form>
+        </main>
+        <footer class="temp-footer">
+            <div id="result"></div>
+        </footer>
     </div>
-    <div class="footer-sect mt-20 width-50"><p>CopyRight © 2023 TemperatureConverter All Rights Reserved</p></div>
-  </div>
-</div>
+    <script src="script.js"></script>
 </body>
 </html>
